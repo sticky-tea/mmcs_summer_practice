@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="GOST_Encrypt_SR" xd:componentRef="GOST_Encrypt_SR" xd:initiationInterval="x" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(Data_i)" xd:originalName="Data" xd:direction="in" xd:interfaceRef="Data_i" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(Data_o)" xd:originalName="Data" xd:direction="out" xd:interfaceRef="Data_o" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="Size" xd:originalName="Size" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="Mode" xd:originalName="Mode" xd:direction="in" xd:interfaceRef="Mode" xd:busTypeRef="register" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(Data_out)" xd:originalName="Data_out" xd:direction="out" xd:interfaceRef="Data_out" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="1828" xd:FF="671" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

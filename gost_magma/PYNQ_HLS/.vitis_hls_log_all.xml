@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-1715] Encountered problem during source synthesis" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:36.882+0300"/>
+        <logs message="ERROR: [HLS 214-135] Syn check fail!" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:36.867+0300"/>
+        <logs message="ERROR: [HLS 214-143] in function 'GOST_Encrypt_SR_AXI(aes_byte*, unsigned int, bool, aes_byte*)': Arrays must be specified with a constant size (gost_magma/magma.cpp:231:2)" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:36.858+0300"/>
+        <logs message="ERROR: [HLS 214-143] in function 'GOST_Encrypt_SR_AXI(aes_byte*, unsigned int, bool, aes_byte*)': Arrays must be specified with a constant size (gost_magma/magma.cpp:230:2)" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:36.848+0300"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:225:47" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:32.841+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:224:47" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:32.829+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5515] 'region' in '#pragma HLS Inline' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Inline Pragma'.: gost_magma/magma.cpp:220:26" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:32.821+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: gost_magma/magma.cpp:180:9" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:32.810+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5526] The 'enable_flush' option of the 'HLS pipeline' directive or pragma is deprecated, and it is suggested to use style=flp as replacement.: gost_magma/magma.cpp:179:34" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:32.800+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: gost_magma/magma.cpp:226:9" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:32.791+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:225:47" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:31.729+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:224:47" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:31.720+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5515] 'region' in '#pragma HLS Inline' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Inline Pragma'.: gost_magma/magma.cpp:220:26" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:31.710+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: gost_magma/magma.cpp:180:9" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:31.700+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5526] The 'enable_flush' option of the 'HLS pipeline' directive or pragma is deprecated, and it is suggested to use style=flp as replacement.: gost_magma/magma.cpp:179:34" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:31.690+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-949] non-portable path to file '&lt;string.h>'; specified path differs in case from file name on disk: gost_magma/magma.cpp:2:10" projectName="gost_magma" solutionName="magma" date="2021-07-02T14:40:31.681+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

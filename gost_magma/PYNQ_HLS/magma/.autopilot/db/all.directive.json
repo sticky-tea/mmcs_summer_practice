@@ -1,0 +1,15 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "GOST_Encrypt_SR_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "GOST_Encrypt_SR_AXI"
+              }]
+          }
+        }]
+    }]}

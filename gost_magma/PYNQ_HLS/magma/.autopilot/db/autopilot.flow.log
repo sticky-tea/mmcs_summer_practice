@@ -1,0 +1,220 @@
+INFO-FLOW: Workspace C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma opened at Fri Jul 02 14:40:29 +0300 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2021.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2021.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 0.426 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.109 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.547 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vivado_clock=10 
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+Execute     config_export -vivado_clock=10 
+Command   open_solution done; 0.583 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+Execute     create_platform xc7z020-clg400-1 -board  
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.104 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.124 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -hw_syn 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -pre_tcl 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 1007.522 MB.
+INFO: [HLS 200-10] Analyzing design file 'gost_magma/magma.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling gost_magma/magma.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang gost_magma/magma.cpp -foptimization-record-file=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.magma.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2021.1/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -I C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.magma.cpp.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.magma.cpp.err.log 
+Command       ap_eval done; 0.683 sec.
+WARNING: [HLS 207-949] non-portable path to file '<string.h>'; specified path differs in case from file name on disk: gost_magma/magma.cpp:2:10
+INFO-FLOW: Done: GCC PP 39 time: 0.7 seconds per iteration
+Execute       set_directive_top GOST_Encrypt_SR_AXI -name=GOST_Encrypt_SR_AXI 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.658 sec.
+WARNING: [HLS 207-5526] The 'enable_flush' option of the 'HLS pipeline' directive or pragma is deprecated, and it is suggested to use style=flp as replacement.: gost_magma/magma.cpp:179:34
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: gost_magma/magma.cpp:180:9
+WARNING: [HLS 207-5515] 'region' in '#pragma HLS Inline' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Inline Pragma'.: gost_magma/magma.cpp:220:26
+WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:224:47
+WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:225:47
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: gost_magma/magma.cpp:226:9
+Execute       clang_tidy xilinx-systemc-detector C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/.systemc_flag -fix-errors C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/all.directive.json -fix-errors C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang-tidy.magma.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang-tidy.magma.pp.0.cpp.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang-tidy.magma.pp.0.cpp.err.log 
+Command         ap_eval done; 0.103 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.161 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/xilinx-dataflow-lawyer.magma.pp.0.cpp.diag.yml C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/xilinx-dataflow-lawyer.magma.pp.0.cpp.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/xilinx-dataflow-lawyer.magma.pp.0.cpp.err.log 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.magma.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.magma.pp.0.cpp.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.magma.pp.0.cpp.err.log 
+Command       ap_eval done; 0.674 sec.
+WARNING: [HLS 207-5526] The 'enable_flush' option of the 'HLS pipeline' directive or pragma is deprecated, and it is suggested to use style=flp as replacement.: gost_magma/magma.cpp:179:34
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: gost_magma/magma.cpp:180:9
+WARNING: [HLS 207-5515] 'region' in '#pragma HLS Inline' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Inline Pragma'.: gost_magma/magma.cpp:220:26
+WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:224:47
+WARNING: [HLS 207-5542] the expression for 'port' option is invalid, top argument that is ap_fifo/axis port may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: gost_magma/magma.cpp:225:47
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.518 seconds; current allocated memory: 118.124 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/magma.g.bc -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.0.bc > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2021.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2021.1/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2021.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2021.1/win64/lib/libhlsmc++_39.bc -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 2.286 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.289 sec.
+Execute       run_link_or_opt -opt -out C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=GOST_Encrypt_SR_AXI -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=GOST_Encrypt_SR_AXI -reflow-float-conversion -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 0.84 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.843 sec.
+Execute       run_link_or_opt -out C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2021.1/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2021.1/win64/lib/libfloatconversion_39.bc -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=GOST_Encrypt_SR_AXI 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=GOST_Encrypt_SR_AXI -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_compile -instruction_warning_threshold 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_array_partition -throughput_driven 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=GOST_Encrypt_SR_AXI -mllvm -hls-db-dir -mllvm C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshhold=200000 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-disaggregate-bitwidth-threshold=4096 -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -x ir C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/a.g.lto.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> C:/Users/gorshkov_aa/AppData/Roaming/Xilinx/Vitis/gost_magma/magma/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; error code: 1; 0.669 sec.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-178] Inlining function '_lrotl32(unsigned int, unsigned char)' into 'GOST_Crypt_Step(GOST_Data_Part*, unsigned char*, unsigned int, bool)' (gost_magma/magma.cpp:37:0)
+INFO: [HLS 214-178] Inlining function 'GOST_Crypt_32_E_Cicle(GOST_Data_Part*, unsigned char*, unsigned int*)' into 'GOST_Encrypt_SR(unsigned char*, unsigned int, bool, unsigned char*)' (gost_magma/magma.cpp:177:0)
+INFO: [HLS 214-178] Inlining function 'GOST_Crypt_32_D_Cicle(GOST_Data_Part*, unsigned char*, unsigned int*)' into 'GOST_Encrypt_SR(unsigned char*, unsigned int, bool, unsigned char*)' (gost_magma/magma.cpp:177:0)
+ERROR: [HLS 214-143] in function 'GOST_Encrypt_SR_AXI(aes_byte*, unsigned int, bool, aes_byte*)': Arrays must be specified with a constant size (gost_magma/magma.cpp:230:2)
+ERROR: [HLS 214-143] in function 'GOST_Encrypt_SR_AXI(aes_byte*, unsigned int, bool, aes_byte*)': Arrays must be specified with a constant size (gost_magma/magma.cpp:231:2)
+ERROR: [HLS 214-135] Syn check fail!
+Execute       send_msg_by_id ERROR @200-1715@ 
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO-FLOW: Error in clang_39: 
+Command     elaborate done; error code: 2; 6.59 sec.
+Command   csynth_design done; error code: 2; 6.6 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.616 seconds; current allocated memory: 118.619 MB.
+Command ap_source done; error code: 1; 7.358 sec.
+Execute cleanup_all 

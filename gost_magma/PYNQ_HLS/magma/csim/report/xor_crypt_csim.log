@@ -1,0 +1,22 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../test.cpp in debug mode
+   Compiling ../../../magma.cpp in debug mode
+   Generating csim.exe
+Imitta test passed
+
+12 a2 8e 60 5d 76 bf c9 af 84 67 8a a5 e8 f7 e8 de 8e 29 16 19 cb d2 8 12 a2 8e 60 5d 76 bf c9 af 84 67 8a a5 e8 f7 e8 de 8e 29 16 19 cb d2 8 
+Simple replacement encryption test passed
+
+6a db 6e c5 3e c6 45 a4 70 a8 22 b8 94 a7 fe 28 38 48 0 0 0 0 0 0 Simple decryption test passed
+
+Gamma encryption test passed
+
+Gamma decryption test passed
+
+Gamma with feedback encryption test passed
+
+Gamma with feedback decryption test passed
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

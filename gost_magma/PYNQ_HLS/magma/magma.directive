@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="GOST_Encrypt_SR_AXI" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="GOST_Encrypt_SR_AXI"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="magma.cpp" path="C:\Users\gorshkov_aa\AppData\Roaming\Xilinx\Vitis\gost_magma\magma.cpp"/>
+    <originFiles name="magma.hpp" path="C:\Users\gorshkov_aa\AppData\Roaming\Xilinx\Vitis\gost_magma\magma.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="C:\Users\gorshkov_aa\AppData\Roaming\Xilinx\Vitis\gost_magma\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

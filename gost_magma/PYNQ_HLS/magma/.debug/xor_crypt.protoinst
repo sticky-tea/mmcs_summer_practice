@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"xor_crypt": {
+			"proto_instances": {
+			}
+		}
+	}
+}
