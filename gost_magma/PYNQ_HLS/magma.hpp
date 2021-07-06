@@ -25,6 +25,7 @@ typedef struct
 {
 	unsigned char text_byte;
 	bool TLAST;
+	bool TUSER;
 } aes_byte;
 
 #define _GOST_Part_Size (uint32_t)8

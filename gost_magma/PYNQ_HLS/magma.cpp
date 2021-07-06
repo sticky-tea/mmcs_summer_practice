@@ -215,24 +215,25 @@ void GOST_Encrypt_SR(uint8_t *Data, uint32_t Size, bool Mode, uint8_t* Data_out)
     	printf("%hhx ", Data[i]);
 }
 
-void GOST_Encrypt_SR_AXI(aes_byte* Data, uint32_t Size, bool Mode, aes_byte* Data_out)
+void GOST_Encrypt_SR_AXI(aes_byte Data[16], aes_byte Data_out[16])
 {
 #pragma HLS inline region
 
-#pragma HLS INTERFACE s_axilite port=Size bundle=MAGMA
-#pragma HLS INTERFACE s_axilite port=Mode bundle=MAGMA
-#pragma HLS INTERFACE axis register both port=Data
-#pragma HLS INTERFACE axis register both port=Data_out
-#pragma HLS INTERFACe s_axilite port=return             bundle=MAGMA
+#pragma HLS INTERFACE axis port=Data
+#pragma HLS INTERFACE axis port=Data_out
+#pragma HLS INTERFACe s_axilite port=return bundle = CONTROL_BUS
 
 #pragma HLS pipeline
 
+	const uint8_t Size = 16;
 	unsigned char data_in[Size];
 	unsigned char data_out[Size];
 
 	for (unsigned char i = 0; i < Size; i++) {
 		data_in[i] = Data[i].text_byte;
 	}
+
+	bool Mode = _GOST_Mode_Encrypt;
 
 	GOST_Encrypt_SR(data_in, Size, Mode, data_out);
 
